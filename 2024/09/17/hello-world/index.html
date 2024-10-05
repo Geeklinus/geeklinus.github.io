@@ -74,13 +74,21 @@
     </script>
 
     <div class="wrapper">
-        <header>
+        <!--
+ * @Author: geeklinus 3253260257@qq.com
+ * @Date: 2024-10-05 13:46:53
+ * @LastEditors: geeklinus 3253260257@qq.com
+ * @LastEditTime: 2024-10-05 16:55:56
+ * @FilePath: \undefinedd:\hexo\blog\themes\Chic\layout\_partial\header.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<header>
     <nav class="navbar">
         <div class="container">
             <div class="navbar-header header-logo"><a href="/">Geeklinus&#39;s Blog</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="/archives">归档</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
                     <a class="menu-item" href="/category">分类</a>
                 
@@ -101,11 +109,11 @@
                 <div>
                     <a href="/">Geeklinus&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; 目录</div>
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="/archives">归档</a>
+                    <a class="menu-item" href="/archives">文章</a>
                 
                     <a class="menu-item" href="/category">分类</a>
                 
@@ -132,16 +140,30 @@
     }
 </script>
             <div class="main">
-                <div class="container">
-    
-    
-        <div class="post-toc">
+                <!--
+ * @Author: geeklinus 3253260257@qq.com
+ * @Date: 2024-10-05 13:46:53
+ * @LastEditors: geeklinus 3253260257@qq.com
+ * @LastEditTime: 2024-10-05 16:43:29
+ * @FilePath: \undefinedd:\hexo\blog\themes\Chic\layout\_page\post.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="container">
+    <!--
+ * @Author: geeklinus 3253260257@qq.com
+ * @Date: 2024-10-05 13:46:53
+ * @LastEditors: geeklinus 3253260257@qq.com
+ * @LastEditTime: 2024-10-05 17:00:30
+ * @FilePath: \undefinedd:\hexo\blog\themes\Chic\layout\_partial\toc.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<div class="post-toc">
     <div class="tocbot-list">
     </div>
     <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">前往底部</a>
     </div>
 </div>
 
@@ -198,31 +220,27 @@
         }
         return target;
     }
-</script>
-    
+</script>  
+  <article class="post-wrap">
+    <header class="post-header">
+      <h1 class="post-title">Hello World</h1>
+      
+      <div class="post-meta">
+         作者:
+        <a itemprop="author" rel="author" href="/">Geeklinus</a>
+         
+        <span class="post-time">
+          日期:
+          <a href="#"
+            >九月 17, 2024&nbsp;&nbsp;16:55:48</a
+          >
+        </span>
+         
+      </div>
+      
+    </header>
 
-    
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
-            
-                <div class="post-meta">
-                    
-                        Author: <a itemprop="author" rel="author" href="/">Geeklinus</a>
-                    
-
-                    
-                        <span class="post-time">
-                        Date: <a href="#">九月 17, 2024&nbsp;&nbsp;16:55:48</a>
-                        </span>
-                    
-                    
-                </div>
-            
-        </header>
-
-        <div class="post-content">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <div class="post-content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -235,58 +253,45 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+</div>
 
-        </div>
-
-        
-            <section class="post-copyright">
-                
-                    <p class="copyright-item">
-                        <span>Author:</span>
-                        <span>Geeklinus</span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>Permalink:</span>
-                        <span><a href="https://geeklinus.github.io/2024/09/17/hello-world/">https://geeklinus.github.io/2024/09/17/hello-world/</a></span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>License:</span>
-                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
-                    </p>
-                
-                
-                     <p class="copyright-item">
-                         <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY</strong>?</span>
-                     </p>
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-            
-        </section>
-
-
-    </article>
+    
+    <section class="post-copyright">
+      
+      <p class="copyright-item">
+        <span>作者:</span>
+        <span>Geeklinus</span>
+      </p>
+       
+      <p class="copyright-item">
+        <span>原文链接:</span>
+        <span><a href="https://geeklinus.github.io/2024/09/17/hello-world/">https://geeklinus.github.io/2024/09/17/hello-world/</a></span>
+      </p>
+       
+      <p class="copyright-item">
+        <span>许可:</span>
+        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+      </p>
+       
+    </section>
+    
+    <section class="post-tags">
+      <div>
+        <span>标签:</span>
+        <span class="tag">
+          
+        </span>
+      </div>
+      <div>
+        <a href="javascript:window.history.back();">返回</a>
+        <span>· </span>
+        <a href="/">首页</a>
+      </div>
+    </section>
+    <section class="post-nav">
+       
+    </section>
+  </article>
 </div>
 
             </div>
